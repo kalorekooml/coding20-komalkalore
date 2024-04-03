@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class UniqueElements {
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 2, 3, 5, 6, 1};
+
+        Set<Integer> uniqueElements = new HashSet<>();
+
+        for (int num : array) {
+            uniqueElements.add(num);
+        }
+
+        System.out.println("Unique elements of the array:");
+        for (int unique : uniqueElements) {
+            System.out.print(unique + " ");
+        }
+    }
+}
